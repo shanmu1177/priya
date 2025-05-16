@@ -1,0 +1,83 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+/* Layout and Typography */
+body {
+min-height: 100vh;
+text-rendering: optimizeSpeed;
+}
+
+wrapper {
+width: 100%;
+max-width: 1240px;
+margin: 0 auto;
+}
+
+text_center {
+text-align: center;
+}
+
+flex {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+hero_content {
+padding: 60px 0;
+}
+
+hero_content h1 {
+margin-bottom: 20px;
+}
+
+work_logos img {
+width: 100px;
+height: auto;
+}
+
+contact_form {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+form_group {
+display: flex;
+flex-direction: column;
+}
+
+label {
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+input,
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+background-color: #007bff;
+color: white;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0056b3;
+}
