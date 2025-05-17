@@ -52,6 +52,7 @@ console.log((a==b)&&(a!=b))
 console.log((a==b)||(a!=b))
 
 
+
 let x = 5;
 let y = 20;
 console.log(`${x}+${y}=${x+y}`)
@@ -116,13 +117,36 @@ else{
 
 for(var i=1;i<=10;i++){
     if(i%2==0){
-        console.log("Even numbers",i)
+        console.log(`even numbers=${i}`)
+    }
+    else if(i%2!=0){
+        console.log("Odd numbers=",i)
     }
 }
 
-do{
-    var i=1;
-    console.log("numbers from 1 to 10:",i)
-    i++;
+let sum=0;
+for(let i=1;i<=10;i++){
+    if(i%2==0){
+        sum+=i
+    }
 }
-while(i<=10);
+console.log("The sum of Even numebers is",sum)
+
+
+
+function sumofeven(start,end){
+    let sum=0;
+for(let i=start;i<=end;i++){
+    if(i%2==0){
+        sum+=i
+    }
+}
+ return(sum)
+}
+var result=sumofeven(1,10)
+console.log("Sum of even numbers",result)
+
+
+question="are you single?..."
+var answer=("Question==yes")?"yes":"no"
+console.log(answer)
