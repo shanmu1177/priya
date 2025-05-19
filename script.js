@@ -213,7 +213,15 @@ for(var favourite in fav){
  }
  func("bro",sayhi);
 
+
+const btn=document.getElementById("btn")
  btn.onclick=function(){
     alert("Welcome to Instagram \n nambi vaanga!..naasasma ponga!..")
     window.open("https://www.instagram.com")
  }
+
+ const yt=document.getElementsByClassName(".yt")
+  yt.onclick=function(){
+    alert("Its Youtube Time..!")
+    window.open("https://www.youtube.com")
+  }
