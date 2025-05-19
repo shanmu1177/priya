@@ -150,3 +150,70 @@ console.log("Sum of even numbers",result)
 question="are you single?..."
 var answer=("Question==yes")?"yes":"no"
 console.log(answer)
+
+const icecream=["orange","vennila","chocolate","mango","butterscotch"];
+console.log(icecream)
+
+//"for in" which is used to display the index value  
+for(var items in icecream){
+    console.log(items)
+}
+
+//"for of" which is used to display the key values of givena array
+for(var flavour of icecream)
+{
+    console.log(flavour)
+}
+
+const details=[];
+details[0]="name";
+details[1]="roll no";
+details[2]="class";
+details[3]="phone no";
+console.log(details)
+console.log(details[0])
+details[3]="mobile no";
+//toString function
+console.log(details.toString())
+//length function
+var length=details.length;
+console.log("total length",length)
+
+//key value pairs (obj)
+var fav={color:"blue",actor:"vijay",cricket_tem:"csk",food:"biriyani"}
+for(var favourite in fav){
+     console.log(favourite)
+     console.log(fav[favourite])
+}
+
+//char.at() function
+ var cols=["blue","red","green","yellow","orange"];
+ var colours=cols.at(3);
+ console.log(colours)
+
+ //spread operator
+ var arr1=[10,20,30,40,50];
+ var arr2=[...arr1,60,70];
+ console.log(arr2)
+
+ //destructuring operator 
+ const movies=["Retro","GBU","Goat"];
+ const [m1,m2,m3]=movies;
+ console.log(m1)
+ console.log(m2)
+ console.log(m3)
+
+ //call back function
+ function sayhi(){
+    console.log("hii")
+ }
+ function func(name,callback){
+    console.log("hello"+" "+name)
+    callback()
+ }
+ func("bro",sayhi);
+
+ btn.onclick=function(){
+    alert("Welcome to Instagram \n nambi vaanga!..naasasma ponga!..")
+    window.open("https://www.instagram.com")
+ }
